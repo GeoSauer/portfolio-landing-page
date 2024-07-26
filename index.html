@@ -173,19 +173,18 @@
                 >
               </article>
             </section>
-            <!-- <ul class="actions">
-              <li><a href="#" class="button">Browse All</a></li>
-            </ul> -->
           </div>
         </section>
       </section>
 
-      <!-- Footer -->
+      <!-- Contact -->
       <section id="footer">
         <div class="inner">
           <h2 class="major">Get in touch</h2>
           <p>Thanks for taking the time to learn a bit about me!</p>
-          <form method="post" action="#">
+          <form method="post" action="https://api.web3forms.com/submit" id="web3form">
+            <!-- Web3 access key -->
+            <input type="hidden" name="access_key" />
             <div class="fields">
               <div class="field">
                 <label for="name">Name</label>
@@ -203,7 +202,10 @@
             <ul class="actions">
               <li><input type="submit" value="Send Message" /></li>
             </ul>
+            <!-- Spam prevention -->
+            <input type="hidden" name="botcheck" value="" />
           </form>
+          <!-- Contact methods -->
           <ul class="contact">
             <li class="icon solid fa-home">Loveland, CO USA</li>
             <li class="icon solid fa-phone">
@@ -223,6 +225,7 @@
               >
             </li>
           </ul>
+          <!-- Footer -->
           <ul class="copyright">
             <li>&copy; Geo Sauer. All rights reserved.</li>
             <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
@@ -238,5 +241,7 @@
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/email.js"></script>
+    <script src="assets/js/config.js"></script>
   </body>
 </html>
